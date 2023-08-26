@@ -1,4 +1,4 @@
-Introduction 
+##Introduction 
 In this project, we will be creating a Virtual Private Cloud (VPC) on Amazon Web Services (AWS) with two public and Private subnets and an autoscaling group to ensure high availability and scalability of our web application. We’ll also be configuring an Application Load Balancer to distribute traffic to the autoscaling group, and implementing security groups to ensure the safety and security of our infrastructure. So, let’s get started and build an infrastructure that can handle any amount of traffic with ease!
 
 **Step1 - Create a custom VPC and all its dependencies**
