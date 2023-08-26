@@ -1,22 +1,38 @@
-##Introduction 
+Introduction
+
 In this project, we will be creating a Virtual Private Cloud (VPC) on Amazon Web Services (AWS) with two public and Private subnets and an autoscaling group to ensure high availability and scalability of our web application. We’ll also be configuring an Application Load Balancer to distribute traffic to the autoscaling group, and implementing security groups to ensure the safety and security of our infrastructure. So, let’s get started and build an infrastructure that can handle any amount of traffic with ease!
 
 **Step1 - Create a custom VPC and all its dependencies**
+
 We are going to be creating a custom VPC with all associated dependencies using the VPC and More option. This will automatically create your VPC, subnets, Internet gateway, Nat Gateways and route tables, 
 This option of creating VPC and its associated dependencies will help eliminate errors that can be encountered while creating each dependency individually.
+
 1.Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+
 2.In the VPC Dashboard, choose Create VPC.
+
 3.Under VPC settings, choose VPC and more.
+
 4.Complete these fields as follows:
+
 •Keep Auto-generated selected under Name tag auto-generation. Change project to webserver
+
 •The IPv4 CIDR block should be 10.0.0.0/16.
+
 •Keep No IPv6 CIDR block option selected.
+
 •The Tenancy should remain Default.
+
 •Select 2 for the Number of Availability Zones (AZs).
+
 •Select 2 for the Number of public subnet and Private subnet
+
 •Choose Customize subnet CIDR blocks to configure the public and private subnet Ip address range. The public subnet CIDR block should be as shown in the screenshot below 
+
 •For Nat Gateway, choose 1per AZ
+
 •Choose None for S3 endpoint
+
 5.Choose Create VPC. It takes several minutes for the VPC to be create
 
 
